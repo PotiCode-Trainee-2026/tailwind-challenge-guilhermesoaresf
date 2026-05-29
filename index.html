@@ -1,13 +1,72 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tailwindtemplate</title>
+    <title>Match Point Store</title>
   </head>
-  <body>
-    <div class="bg-pink-500">oi galera :D</div>
+  <body class="bg-stone-50 text-stone-900">
+    <header class="border-b border-stone-200 bg-white/90">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+        <a href="#" class="text-lg font-bold text-emerald-800">Match Point</a>
+
+        <div class="hidden items-center gap-8 text-sm font-medium text-stone-600 md:flex">
+          <a class="transition hover:text-emerald-700" href="#">Inicio</a>
+          <a class="transition hover:text-emerald-700" href="#produtos">Produtos</a>
+          <a class="transition hover:text-emerald-700" href="#kits">Kits</a>
+          <a class="transition hover:text-emerald-700" href="#contato">Contato</a>
+        </div>
+
+        <a
+          href="#produtos"
+          class="rounded-md bg-emerald-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-800"
+        >
+          Ver ofertas
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="mx-auto grid max-w-6xl items-center gap-10 px-5 py-14 md:grid-cols-2 md:py-20">
+        <div>
+          <p class="mb-3 text-sm font-semibold uppercase tracking-wide text-emerald-700">
+            Acessorios para tenis
+          </p>
+          <h1 class="text-4xl font-bold leading-tight text-stone-950 md:text-5xl">
+            Tudo para entrar em quadra sem complicacao.
+          </h1>
+          <p class="mt-5 max-w-xl text-base leading-7 text-stone-600">
+            Raquetes, bolas, grips e pequenos acessorios para treinos, partidas de fim de semana
+            e reposicao do equipamento do dia a dia.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a
+              href="#produtos"
+              class="rounded-md bg-emerald-700 px-5 py-3 text-center text-sm font-semibold text-white transition hover:bg-emerald-800"
+            >
+              Comprar agora
+            </a>
+            <a
+              href="#kits"
+              class="rounded-md border border-stone-300 px-5 py-3 text-center text-sm font-semibold text-stone-700 transition hover:border-emerald-700 hover:text-emerald-700"
+            >
+              Montar kit
+            </a>
+          </div>
+        </div>
+
+        <div class="rounded-lg border border-stone-200 bg-white p-3 shadow-sm">
+          <img
+            class="h-auto w-full rounded-md object-cover"
+            src="./src/assets/tennis-kit.png"
+            alt="Raquete, bolas e acessorios de tenis"
+          />
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
   </body>
-  <script type="module" src="./src/main.js"></script>
 </html>
